@@ -1,17 +1,45 @@
 $(document).ready(function() {
 
   // SCROLLIFY FUNCTIONS:
-  $.scrollify( {
+  // selects sections:
+  $.scrollify({
     section: ".section",
+    interstitialSection: ".footer", 
     scrollbars: false,
-  })
+  });
 
-  // $('.one').click(function() {
-  //   $(this).css("background", "pink");
-  // })
-  //
-  // $('.two').click(function() {
-  //   $(this).css("background", "cyan");
-  // })
+  // navigation:
+  $(".first").click(
+    function() {
+      $.scrollify.move("#1");
+    }
+  );
+
+  $(".second").click(
+    function() {
+      $.scrollify.move("#2");
+    }
+  );
+
+  $(".third").click(
+    function() {
+      $.scrollify.move("#3");
+    }
+  );
+
+  $(".fourth").click(
+    function() {
+      $.scrollify.move("#4");
+    }
+  );
+
+  // OTHER FUNCTIONS:
+  $("li").hover(
+    function() {
+      $(this).css("color", "white");
+    }, function() {
+      $(this).css("color", "black");
+    }
+  );
 
 })
