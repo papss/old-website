@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+}
+
+/* ========== MENU STYLES ========== */
+
+.menu {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  text-align: right;
+  z-index: 1;
+}
+
+.menu > ol {
+  display: inline-block;
+  padding-right: 20px;
+  text-align: left;
+  margin-top: 200px;
+  font-family: 'Arial';
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+}
+
+/* ========== SECTION STYLES ========== */
+
+.section {
+  height: 100%;
+  width: 100%;
+  padding: 102.5px 0px;
+}
+
+.test {
+  position: relative;
+  left: 30%;
+  width: 70%;
+  height: 100%;
+}
+
+.one {
+  background: #005CB2;
+}
+
+.two {
+  background: #00B202;
+}
+
+.three {
+  background: #F5D547;
+}
+
+.four {
+  background: #D82B4E;
+}
+
+/* ========== CONTENT STYLES ========== */
+
+.content {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 10px;
+  width: 700px;
+  height: 750px;
+  font-family: 'Arial';
+  border: 1px solid black;
+}
