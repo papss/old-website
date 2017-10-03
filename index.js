@@ -13,6 +13,7 @@ $(document).ready(function() {
       $(".menu").find("a[href=\"#" + ref + "\"]").addClass("active");
 
     },
+    // renders the nav menu: 
     afterRender: function() {
 
       var menu = "<ol class=\"menu\">";
@@ -22,7 +23,7 @@ $(document).ready(function() {
         if(i===0) {
           activeClass = "active";
         }
-        menu += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span>" + $(this).attr("data-section-name") + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+        menu += "<li><a class=\"nav " + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span>" + $(this).attr("data-section-name") + "</span></a></li>";
       });
       menu += "</ol>";
       $(".one").append(menu);

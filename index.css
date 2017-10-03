@@ -2,17 +2,34 @@
   margin: 0px;
 }
 
+* > a:visited {
+  color: white;
+}
+
 /* ========== MENU STYLES ========== */
 
 .menu {
   position: fixed;
-  top: 50px;
-  left: 30px; 
-  text-align: right;
+  top: 25%;
+  left: 18%;
   z-index: 10;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Arial';
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav {
+  text-decoration: none;
 }
 
 /* ========== SECTION STYLES ========== */
+
+.section {
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+}
 
 .test {
   position: relative;
@@ -22,25 +39,12 @@
   text-align: center;
 }
 
-.one {
-  background: #005CB2;
-}
-
-.two {
-  background: #38D300;
-}
-
-.three {
-  background: #F5D547;
-}
-
-.four {
-  background: #D82B4E;
-}
-
 .active {
+  text-decoration: underline;
   color: white;
 }
+
+
 
 /* ========== CONTENT STYLES ========== */
 
@@ -53,8 +57,18 @@
   margin: auto;
   width: 100%;
   height: 75%;
-  font-family: 'Arial';
-  border: 1px solid black;
+  text-align: justify;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: white;
+
+  border: 1px solid white;
+}
+
+.keyword {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: white;
 }
 
 /* ========== FOOTER STYLES ========== */
