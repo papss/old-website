@@ -1,81 +1,50 @@
-/* ========== GLOBAL STYLES ========== */
-* {
-  margin: 0px;
-  padding: 0px;
-}
+/* PADDING/MARGINS RESET: */
+  * { padding: 0; margin: 0; }
+  body { font-family: sans-serif; }
+
+/* GLOBAL STYLES: */
 
 * > a, a:active, a:visited {
   color: white;
-}
-
-/* ==================== FULL SCREEN ====================== */
-/* ======================================================= */
-
-/* ========== SECTION STYLES ========== */
-.section {
-  display: flex;
-  background: linear-gradient(to right, #3494e6, #49b257);
-}
-
-.left {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  display: inline-block;
-  height: 100%;
-  width: 20%;
-}
-
-.test {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-  width: 45%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.active {
-  text-decoration: underline;
-  color: white;
-}
-
-/* ========== MENU STYLES ========== */
-.menu {
-  position: fixed;
-  top: 25%;
-  left: 18%;
-  z-index: 10;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 36px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-.nav {
   text-decoration: none;
 }
 
-/* ========== CONTENT STYLES ========== */
+/* STRUCTURAL STYLES: */
 
-.content {
-  position: absolute;
-  top: 47%;
-  transform: translateY(-47%);
-  box-sizing: border-box;
-  padding: 20px;
+body {
+  background: linear-gradient(to bottom right, #3494e6, #49b257);
+}
+
+main {
+  height: 100%;
+  width: 1000px;
   margin: auto;
-  width: 755px;
-  height: 75%;
+}
+
+/* SECTION STYLES: */
+/* grid controls page layout */
+
+.wrapper {
+  transform: translateY(18.5%);
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 700px 300px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+article {
+  grid-column: 1;
+  grid-row: 1 / 8;
+
+  padding: 20px;
+  border: 1px solid white;
+
   text-align: justify;
   font-family: 'Raleway';
   font-size: 20px;
   color: white;
-
-  border: 1px solid white;
 }
 
 .keyword {
@@ -84,72 +53,10 @@
   color: white;
 }
 
-/* ========== FOOTER STYLES ========== */
-
-.footer {
-  padding: 10px;
-  text-align: center;
-  font-family: 'Arial';
-  font-size: 8px;
-  color: lightgrey;
-  background: #3C3C3B;
+aside {
+  grid-column: 2;
+  grid-row: 1 / 8;
+  background: teal;
 }
 
-/* ====================== MOBILE STYLES ======================== */
-/* ============================================================= */
-
-@media (max-width: 450px) {
-
-  .section {
-
-  }
-
-  .left {
-    display: block;
-    height: 100px;
-    width: 100%;
-    background: white;
-  }
-
-  .test {
-    display: block;
-    top: 100px;
-    width: 95%;
-    height: 100%;
-  }
-
-  /* ========== MENU STYLES ========== */
-
-  .menu {
-    position: relative;
-    top: 53px;
-    left: 0px;
-    width: 97%;
-    margin: auto;
-    text-align: center;
-  }
-
-  .menu > li {
-    display: inline-block;
-  }
-
-  .nav {
-    display: inline-block;
-    margin: 0px 5px;
-    font-size: 1.5rem;
-  }
-
-  .nav > a, a:active, a:visited {
-    color: #3494e6;
-  }
-
-  /* ========== CONTENT STYLES ========== */
-
-  .content {
-    width: 100%;
-    margin: auto;
-    height: 81%;
-    transform: translateY(-56%);
-  }
-
-}
+/* MENU STYLES: */
