@@ -38,25 +38,31 @@ article {
   grid-column: 1;
   grid-row: 1 / 8;
 
-  padding: 20px;
+
   border: 1px solid white;
 
   text-align: justify;
-  font-family: 'Raleway';
-  font-size: 20px;
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  line-height: 1.5;
   color: white;
+}
+
+article > p {
+    padding: 20px;
 }
 
 .keyword {
   font-family: 'Lobster', cursive;
-  font-size: 36px;
+  font-size: 2rem;
+  line-height: 1.5;
   color: white;
 }
 
 aside {
   grid-column: 2;
   grid-row: 1 / 8;
-  background: teal;
+  /*background: teal;*/
 }
 
 /* MENU STYLES: */
