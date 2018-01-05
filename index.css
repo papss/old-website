@@ -21,6 +21,15 @@ main {
   margin: auto;
 }
 
+.img-container {
+  position: fixed;
+  height: 700px;
+  width: 300px;
+  top: 13.6%;
+  right: 13%;
+  background: rgba(1, 1, 1, 0.5);
+}
+
 /* SECTION STYLES: */
 /* grid controls page layout */
 
@@ -62,7 +71,7 @@ article > p {
 aside {
   grid-column: 2;
   grid-row: 1 / 8;
-  /*background: teal;*/
+  background: pink;
 }
 
 /* MENU STYLES: */
